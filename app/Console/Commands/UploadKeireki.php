@@ -58,20 +58,7 @@ class UploadKeireki extends Command
          * */
         print($res);
 
-        /*
-         * {
-{
-  "object": "file",
-  "id": "file-QoW6FoVgGZjahZwFPua7TA",
-  "purpose": "assistants",
-  "filename": "keireki.txt",
-  "bytes": 34282,
-  "created_at": 1749545542,
-  "expires_at": null,
-  "status": "processed",
-  "status_details": null
-}
-         */
+
 
     }
     protected function resolveCommand($command)

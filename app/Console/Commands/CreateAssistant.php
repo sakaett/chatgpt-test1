@@ -73,34 +73,7 @@ class CreateAssistant extends Command
             print($res);
 
 
-            /*
-             *{
-  "id": "asst_Z6Yg3QV5W1X9CTwIuOx81afk",
-  "object": "assistant",
-  "created_at": 1749598114,
-  "name": "secretary",
-  "description": null,
-  "model": "gpt-4o",
-  "instructions": "You are a bot providing information on one person's work history. Tell me the contents of the file you loaded. Format of the file you loaded is text file.",
-  "tools": [
-    {
-      "type": "code_interpreter"
-    }
-  ],
-  "top_p": 1.0,
-  "temperature": 1.0,
-  "reasoning_effort": null,
-  "tool_resources": {
-    "code_interpreter": {
-      "file_ids": [
-        "file-QoW6FoVgGZjahZwFPua7TA"
-      ]
-    }
-  },
-  "metadata": {},
-  "response_format": "auto"
-}
-             */
+
 
         }
 
