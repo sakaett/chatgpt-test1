@@ -1,59 +1,15 @@
 <?php
-
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Stchatgpt\Completion;
 use Stchatgpt\QuestionThread;
 
-/**
- * chatgpt test1 コントローラー
- * */
-class Chatgpttest1Controller extends Controller
+class ReacttestController extends Controller
 {
-    //top page
     public function index(){
 
-        return view('chatgpt_test1/index');
-    }
-
-    // Completion chatgptに普通に質問するだけのAPI
-    public function completionView(){
-
-        return view('completion/index');
-    }
-
-    // 質問の回答を表示
-    public function completionExec(Request $request){
-
-        // キーを取得してインスタンス作成
-        $comp = new Completion(config('app.CHATGPT_SECRET'));
-        $res = null;
-        try{
-            //質問を投げる。responseに回答が入っている
-            $res = $comp->execute( $request->get('q'));
-        }catch(\ErrorException $e){
-            echo($e->getCode());
-            echo($e->getMessage());
-            throw $e;
-        }
-
-        $response = json_decode( $res,true);
-
-        return view('completion/results',['res' => $response]);
-    }
-
-    /*-- 以下は、学習した職務経歴書に対する質問について回答するAI。
-     *  一連の連続する質問のシーケンスをスレッドとして管理しているので、threadQxxxという名前にしてみた。
-     *
-     */
-
-    /**
-     * 初期画面表示
-     * */
-    public function threadQStart(){
-
-        return view('threadq/index');
+        return view('react_test1/index');
     }
 
     /**
@@ -157,7 +113,7 @@ class Chatgpttest1Controller extends Controller
             throw $e;
         }
 
-        return view('threadq/thread_view',['thread_id' => $threadId ,'data' => $data]);
+        return response()->json($data);
 
     }
 

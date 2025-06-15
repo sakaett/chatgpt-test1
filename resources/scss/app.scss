@@ -1,0 +1,39 @@
+.text-red {
+    color: #a900ff80;;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  button {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .result-parent{
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+  .resultView {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    height: 30rem;
+  }
+  ul{
+    list-style-type: disclosure-closed;
+  }
+  li{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
