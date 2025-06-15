@@ -7,7 +7,17 @@
   * 秘密鍵を取得して.envに設定した後、app/Console/Commands の下のUploadKeireki.phpコマンドを使用して、解析したいファイルをuploadします。
   * 次に、CreateAssistant.phpコマンドで、assistantを作成し、IDを.envに設定します。
 
-## 構造
+## 環境
+
+* OS: Amazon Linux2 on Oracle VertualBox
+* php: 8.2.28
+* npm: 9.6.7
+* node: 18.17.1
+* Laravel: 12.17.0
+* react: 19.1.0
+
+
+# 構造
 
 ```
 ├── app
